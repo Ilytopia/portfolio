@@ -22,9 +22,8 @@ h1 {
 h2 {
     font-family: DynaPuff;
     color: #FFF9F0;
-    font-size: 40px;
+    font-size: 36px;
     margin: 0;
-    padding-top: 10px;
 }
 
 h3 {
@@ -47,6 +46,10 @@ p {
     font-family: Fredoka;
     font-size: 18px;
     text-align: justify;
+}
+
+section{
+    
 }
 
 body {
@@ -74,8 +77,8 @@ header{
 }
 
 .section_1-1 {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     margin-top: 3%;
 }
 
@@ -145,6 +148,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     position: fixed;
+    align-items: center;
     right: 0;
     top: 40%;
     background-color: #932568;
@@ -202,31 +206,83 @@ button:hover {
     justify-content : center;
 }
 
-.project {
-    text-align: center;
-    background-color: #FFBED8;
-    color: #932568;
-    border-radius : 20px;
-    padding: 0px 10px;
-}
-
-.project p {
-    aspect-ratio : 3/2;
-
-}
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
+.project_card {
+    text-align: center;
+    background-color: #FFBED8;
+    color: #932568;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    height: auto;
+    overflow: auto;
+    display:flex;
+    flex-flow: row;
+}
+
+.project_card p {
+    margin: 10px 0;
+}
+
+#FlowerGarden_title, #TicTacToe_title, #FakeItTillUMakeIt_title {
+    height: initial;
+    display: flex;
+    flex-direction: column;
+}
+
 .illustration {
+    padding: 10px;
     display: flex;
     object-fit: contain;
-    justify-content : center;
-    aspect-ratio: 16/9;
-    width : 100%;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.project_description_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.project_description {
+    justify-content: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.project_link {
+    bottom: 0;
+}
+
+.project_link a{
+    background-color: #932568;
+    color: #FFF9F0;
+    text-decoration: none;
+    font-family: DynaPuff;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    justify-self: center;
+    padding: 1rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+    overflow: auto;
+    position: static;
+    bottom:0;
+}
+
+.project_link a:hover {
+    background-color: #811657;
 }
 
 #contact {
@@ -296,7 +352,7 @@ input{
 
 #footer {
     background-color: #932568;
-    padding: 1rem 20%;
+    padding: 1rem 15%;
     display: flex;
     color: #FFF9F0;
     justify-content: space-between;
@@ -309,6 +365,6 @@ input{
     align-items: center;
 }
 
-.linkedin_link{
-    padding: 15px;
+.github_link, .linkedin_link, .itch_link {
+    padding: 10px;
 }

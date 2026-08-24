@@ -9,9 +9,9 @@
 <body>
     <header>
         <div class="warning_banner">
-            <p id="warning">This website is a work in progress. Please be mindfull of that. :-)</p>
+            <p id="warning">This website is a work in progress. Please be mindful of that. :-)</p>
         </div>
-        <div class="topnav">
+        <nav class="topnav">
             <button onclick="window.location.href='#presentation'">
                 Home
             </button>
@@ -21,22 +21,27 @@
             <button onclick="window.location.href='#contact'">
                 Contact me
             </button>
-        </div>
+        </nav>
     </header>
 
-    <div class="sidebar_socials">
+    <aside class="sidebar_socials">
         <a href="https://github.com/Ilytopia" target="_blank" class="github_link" id="github_link_sidebar">
-            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                <image width="50" height="50" href="GitHub_Invertocat_White_Clearspace.svg" />
+            <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                <image width="35" height="35" href="GitHub_Invertocat_White.svg" />
             </svg>
         </a>
         <a href="https://www.linkedin.com/in/loryn-cesur-7b78ab252/?locale=en" target="_blank" class="linkedin_link" id="linkedin_link_sidebar">
-            <img width="35" height="35" src="InBug-White.png"/>
+            <img width="35" height="35" src="InBug-White.png" />
         </a>
-    </div>
+        <a href="https://ilytopia.itch.io/" target="_blank" class="itch_link" id="itch_link_sidebar">
+            <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                <image width="35" height="35" href="itchio-logo-textless-white.svg"></image>
+            </svg>
+        </a>
+    </aside>
 
-    <div class="page_content">
-        <div class="section_1-1" id="presentation">
+    <main class="page_content">
+        <section class="section_1-1" id="presentation">
             <div class="section_1-3">
                  <img class="avatar" src="Loryn.png" />
             </div>
@@ -46,48 +51,74 @@
                     <h3>Game developer</h3>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section_1-1" id="projects">
+        <section class="section_1-1" id="projects">
             <h1>Portfolio</h1>
             <div class="row">
-                <div class="column">
-                    <div class="project" id="projet_1">
-                        <h2>Project 1</h2>
-                        <img class="illustration" src="Ione_Fanart.png" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.</p>
-                        <a href="https://www.google.com/" target="_blank">Google</a>
+                <article class="project_card" id="prototype_FakeItTillUMakeIt">
+                    <section class="section_1-3" id="FakeItTillUMakeIt_title">
+                        <h2>Prototype<br />Fake It Till U Make It</h2>
+                        <img class="illustration" src="FakeItTillUMakeIt_Prototype_Screenshot.png" />
+                    </section>
+                    <div class="project_description_link">
+                        <section class="project_description">
+                            <p><b>Idea:</b> Take the color of your surroundings and use it to replicate paintings</p>
+                            <p><b>Objectives:</b> Create a working prototype on Unreal Engine in a week (made for a class)</p>
+                            <p><b>Learnings:</b> Using GitHub on an Unreal Engine project, working as a two-person team</p>
+                            <p><b>Notes:</b> I learned that I need to spend more time on planning out the steps needed to achieve my goal, had to rework the entire interaction system to adjust the visual feedback of the game</p>
+                        </section>
+                        <section class="project_link">
+                            <a href="https://ilytopia.itch.io/fake-it-till-u-make-it-prototype" target="_blank">Itch.io</a>
+                        </section>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="project" id="projet_2">
-                        <h2>Project 2</h2>
-                        <img class="illustration" src="ILY.png" />
-                        <p>description</p>
-                        <a href="https://www.google.com/" target="_blank">Google</a>
+                </article>
+                <article class="project_card" id="TicTacToe">
+                    <section class="section_1-3" id="TicTacToe_title">
+                        <h2>WIP <br /> Tic Tac Toe</h2>
+                        <img class="illustration" src="WIP_TicTacToe_Screenshot.png" />
+                    </section>
+                    <div class="project_description_link">
+                        <section class="project_description">
+                            <p><b>Idea:</b> Tic Tac Toe but add a different twist added to your games</p>
+                            <p><b>Objectives:</b> Improve my knowledge on game feel and practice pixel art</p>
+                            <p><b>Learnings:</b> You need a lot more feedback than what I initially thought, talking with other people can make your project take on a whole new path and it might be for the best</p>
+                            <p><b>Notes:</b> Initially this was supposed to be an 'easy' training on how to implement games essential without needing to be innovative. But by talking with colleagues and players I have decided to add a little bit more to this game and work on my game design skills as well. Currently it is still at the 'basic Tic Tac Toe' stage</p>
+                        </section>
+                        <section class="project_link">
+                            <a href="https://github.com/Ilytopia/Tic-Tac-Toe" target="_blank">GitHub</a>
+                        </section>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="project" id="projet_3">
-                        <h2>Project 3</h2>
-                        <img class="illustration" src="ILY.png" />
-                        <p>description</p>
-                        <a href="https://www.google.com/" target="_blank">Google</a>
+                </article>
+                <article class="project_card" id="FlowerGarden">
+                    <section class="section_1-3" id="FlowerGarden_title">
+                        <h2>Console Garden</h2>
+                        <img class="illustration" src="Training_FlowerGarden_Screenshot.png" />
+                    </section>
+                    <div class="project_description_link">
+                        <section class="project_description">
+                            <p><b>Idea:</b> Have a field of flowers that rotate with seasons, bees collecting nectar in the open flowers and returning that nectar to the beehives when their stock is full</p>
+                            <p><b>Objectives:</b> Practicing my understanding of the pattern observer whilst keeping my code flexible and modular</p>
+                            <p><b>Learnings:</b> Decoupling my scripts so that they only take care of their own stuff</p>
+                            <p><b>Notes:</b> Had  a hard time implementing a "one bee per flower" system but I'm very happy with how it turned out</p>
+                        </section>
+                        <section class="project_link">
+                            <a href="https://github.com/Ilytopia/Training_FlowerGarden" target="_blank">GitHub</a>
+                        </section>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-        <div class="section_1-1" id="contact">
+        <section class="section_1-1" id="contact">
             <h1>Contact me</h1>
             <div id="form_contact_me">
-                <form action="https://formspree.io/f/xkodrlyr"
-                      method="POST" target="_top">
+                <form action="https://formspree.io/f/xkodrlyr" method="POST" target="_top">
                     <div class="section_2-5" id="form_column">
                         <div class="form" id="form_name">
                             <label>
                                 Name:
-                                <input type="text" name="name" required placeholder="Jane Doe" maxlength="35"></input>
+                                <input type="text" name="name" required placeholder="Jane Doe" maxlength="35">
                             </label>
                         </div>
                         <div class="form" id="form_email">
@@ -99,7 +130,7 @@
                         <div class="form" id="form_subject">
                             <label>
                                 Subject:
-                                <input type="text" name="subject" placeholder="What you wanna talk about" maxlength="50"></input>
+                                <input type="text" name="subject" placeholder="What you wanna talk about" maxlength="50">
                             </label>
                         </div>
                     </div>
@@ -116,19 +147,24 @@
                     </div>
                 </form>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <footer class="section_1-1" id="footer">
         <p>© 2026 Loryn Cesur. All rights reserved.</p>
         <div class="social_media">
             <a href="https://github.com/Ilytopia" target="_blank" class="github_link" id="github_link_footer">
-                <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                    <image width="50" height="50" href="GitHub_Invertocat_White_Clearspace.svg" />
+                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                    <image width="35" height="35" href="GitHub_Invertocat_White.svg" />
                 </svg>
             </a>
             <a href="https://www.linkedin.com/in/loryn-cesur-7b78ab252/?locale=en" target="_blank" class="linkedin_link" id="linkedin_link_footer">
                 <img width="35" height="35" src="InBug-White.png"/>
+            </a>
+            <a href="https://ilytopia.itch.io/" target="_blank" class="itch_link" id="itch_link_footer">
+                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                    <image width="35" height="35" href="itchio-logo-textless-white.svg"></image>
+                </svg>
             </a>
         </div>
     </footer>
