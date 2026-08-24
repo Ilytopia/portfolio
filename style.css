@@ -201,17 +201,6 @@ button:hover {
     padding: 0 10px;
 }
 
-.row {
-    margin: 0 -5px;
-    justify-content : center;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .project_card {
     text-align: center;
     background-color: #FFBED8;
