@@ -100,6 +100,7 @@ header{
     justify-content: center;
     flex-direction: column;
     flex-grow:1;
+    position: relative;
 }
 
 .section_2-5 {
@@ -163,7 +164,7 @@ button:hover {
 
 #presentation {
     background-color: #FFBED8;
-    height: 400px;
+    height: 450px;
     scroll-margin-top: 200px;
     display: flex;
 }
@@ -182,13 +183,21 @@ button:hover {
 
 .text {
     margin: auto;
+    display : flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     color: #932568;
 }
 
 #presentation_name{
     margin-bottom: 0px;
+}
+
+#CV {
+    position: absolute;
+    bottom: 0;
 }
 
 #projects {
@@ -250,7 +259,7 @@ button:hover {
     bottom: 0;
 }
 
-.project_link a{
+.project_link a, #CV a{
     background-color: #932568;
     color: #FFF9F0;
     text-decoration: none;
@@ -270,9 +279,9 @@ button:hover {
     bottom:0;
 }
 
-.project_link a:hover {
-    background-color: #811657;
-}
+    .project_link a:hover, #CV a:hover {
+        background-color: #811657;
+    }
 
 #contact {
     scroll-margin-top: 130px;
